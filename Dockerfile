@@ -8,7 +8,7 @@ WORKDIR /app
 COPY model.py .
 
 # Install the Python packages listed in the requirements.txt file using pip
-RUN pip install 
+# RUN pip install 
 
 # Specify the command to run when the container starts. In this case, it runs the main.py file using the Python interpreter
 CMD ["python3", "model.py"]
