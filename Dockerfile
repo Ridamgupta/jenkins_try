@@ -5,13 +5,10 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy the main.py file from the local file system into the /app directory inside the container
-COPY main.py .
+COPY model.py .
 
 # Install the Python packages listed in the requirements.txt file using pip
-RUN pip install flask scikit-learn
-
-# Expose port 5000 to the outside world
-EXPOSE 5000
+RUN pip install 
 
 # Specify the command to run when the container starts. In this case, it runs the main.py file using the Python interpreter
-CMD ["python3", "main.py"]
+CMD ["python3", "model.py"]
