@@ -11,4 +11,4 @@ COPY model.py .
 # RUN pip install 
 
 # Specify the command to run when the container starts. In this case, it runs the main.py file using the Python interpreter
-CMD ["python3", "model.py"]
+CMD ["python", "model.py","a"]
